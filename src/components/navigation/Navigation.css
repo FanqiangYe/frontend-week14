@@ -1,0 +1,34 @@
+.nav-container {
+    display: flex;
+    flex-direction: lex;
+    background-color: black;
+}
+.logo-header img{
+    width: 120px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 10px 4px 0;
+}
+
+.nav-items img{
+}
+
+.nav-items li{
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+    text-decoration: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
