@@ -1,6 +1,7 @@
 .nav-container {
     display: flex;
-    flex-direction: lex;
+    flex-direction: row;
+    align-items: center;
     background-color: black;
 }
 .logo-header img{
@@ -8,16 +9,32 @@
 }
 
 .nav-items {
+    flex-wrap: wrap;
+    flex-basis: 1400px;
+    flex-shrink: 1;
+    flex-grow: 0;
     display: flex;
     flex-direction: row;
-    padding: 4px 10px 4px 0;
+    padding: 10px 5px;
+    margin: 0 10px;
 }
 
-.nav-items img{
+.nav-items img {
+    margin-right: 520px;
 }
 
 .nav-items li{
+    margin-left: 18px;
 }
+
+.active-link {
+    border-bottom: 1px solid white;
+}
+
+nav a:hover {
+    color: purple;
+}
+
 
 ul {
     list-style-type: none;

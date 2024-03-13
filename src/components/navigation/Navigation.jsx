@@ -9,9 +9,9 @@ function Navigation() {
             <div className="nav-container">
                 <ul className="nav-items">
                     <span className="logo-header"><img src={logo} alt="logo"/></span>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/newpost">New post</NavLink></li>
-                    <li><NavLink to="/overview">Overview</NavLink></li>
+                    <li><NavLink to="/" className={({ isActive}) => isActive ? 'active-link' : 'default-link'}>Home</NavLink></li>
+                    <li><NavLink to="/newpost" className={({ isActive}) => isActive ? 'active-link' : 'default-link'}>New Post</NavLink></li>
+                    <li><NavLink to="/overview" className={({ isActive}) => isActive ? 'active-link' : 'default-link'}>Blogs overview</NavLink></li>
                 </ul>
             </div>
         </nav>
